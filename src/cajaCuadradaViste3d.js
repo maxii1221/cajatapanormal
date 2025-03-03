@@ -78,9 +78,9 @@ const createScene = (width, height, depth, thickness, withLid) => {
 
     // Crear material de madera con ajustes para hacerlo más claro
     const material = new BABYLON.StandardMaterial("woodMaterial", scene);
-    material.diffuseTexture = new BABYLON.Texture("/src/img/Wood037_2K-JPG_Color.jpg", scene);
+    material.diffuseTexture = new BABYLON.Texture("/src/Wood037_2K-JPG_Color.jpg", scene);
     material.diffuseTexture.level = 1.5;
-    material.bumpTexture = new BABYLON.Texture("/src/img/Wood037_2K-JPG_NormalGL.jpg", scene);
+    material.bumpTexture = new BABYLON.Texture("/src/Wood037_2K-JPG_NormalGL.jpg", scene);
     material.roughness = 1;
     material.metallic = 0;
     material.diffuseColor = new BABYLON.Color3(1, 0.9, 0.75);
@@ -88,27 +88,27 @@ const createScene = (width, height, depth, thickness, withLid) => {
     ///////////////////////////////////////////////////////////////////
     // Crear materiales con diferencias de color más notables para cada cara y menos rugosidad
     const materialDelantera = new BABYLON.StandardMaterial("materialDelantera", scene);
-    materialDelantera.diffuseTexture = new BABYLON.Texture("/src/img/Wood037_2K-JPG_Color.jpg", scene);
+    materialDelantera.diffuseTexture = new BABYLON.Texture("/src/Wood037_2K-JPG_Color.jpg", scene);
     materialDelantera.diffuseColor = new BABYLON.Color3(1, 0.85, 0.7);
     materialDelantera.roughness = 0.5;
 
     const materialBack = new BABYLON.StandardMaterial("materialBack", scene);
-    materialBack.diffuseTexture = new BABYLON.Texture("/src/img/Wood037_2K-JPG_Color.jpg", scene);
+    materialBack.diffuseTexture = new BABYLON.Texture("/src/Wood037_2K-JPG_Color.jpg", scene);
     materialBack.diffuseColor = new BABYLON.Color3(0.95, 0.8, 0.65);
     materialBack.roughness = 0.5;
 
     const materialIzquierda = new BABYLON.StandardMaterial("materialIzquierda", scene);
-    materialIzquierda.diffuseTexture = new BABYLON.Texture("/src/img/Wood037_2K-JPG_Color.jpg", scene);
+    materialIzquierda.diffuseTexture = new BABYLON.Texture("/src/Wood037_2K-JPG_Color.jpg", scene);
     materialIzquierda.diffuseColor = new BABYLON.Color3(0.9, 0.75, 0.6);
     materialIzquierda.roughness = 0.5;
 
     const materialDerecha = new BABYLON.StandardMaterial("materialDerecha", scene);
-    materialDerecha.diffuseTexture = new BABYLON.Texture("/src/img/Wood037_2K-JPG_Color.jpg", scene);
+    materialDerecha.diffuseTexture = new BABYLON.Texture("/src/Wood037_2K-JPG_Color.jpg", scene);
     materialDerecha.diffuseColor = new BABYLON.Color3(0.9, 0.75, 0.6);
     materialDerecha.roughness = 0.5;
 
     const materialBase = new BABYLON.StandardMaterial("materialBase", scene);
-    materialBase.diffuseTexture = new BABYLON.Texture("/src/img/Wood037_2K-JPG_Color.jpg", scene);
+    materialBase.diffuseTexture = new BABYLON.Texture("/src/Wood037_2K-JPG_Color.jpg", scene);
     materialBase.diffuseColor = new BABYLON.Color3(0.9, 0.75, 0.6);
     materialBase.roughness = 0.5;
     ///////////////////////////////////////////////////////////////////
