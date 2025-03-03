@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Creador de Cajas Tapa Visagra</title>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.15/paper-full.min.js"></script>
+</head>
+<body>
+    <h1>Creador de Cajas 3 mm Tapa Visagra</h1>
+
+    <form id="boxForm">
+        <label for="width">Ancho (mm):</label>
+        <input type="number" id="width" name="width" value="50" required>
+
+        <label for="depth">Profundidad (mm):</label>
+        <input type="number" id="depth" name="depth" value="50" required>
+
+        <label for="height">Altura (mm):</label>
+        <input type="number" id="height" name="height" value="50" required>
+
+        <label for="thickness">Espesor de Fibro Fácil (mm):</label>
+        <input type="number" id="thickness" name="thickness" value="3" readonly>
+
+        <p>Tiempo estimado de corte: <span id="cuttingTime">0</span> segundos</p>
+        <p>Costo estimado de corte: <span id="cuttingCost">0</span> $</p>
+        <p>Costo estimado del material: <span id="materialCost">0</span> $</p>
+        <p>Costo total de producto: <span id="CajaCost">0</span> $</p>
+
+        <!-- Checkbox para la tapa
+        <label for="withLid">Con tapa:</label>
+        <input type="checkbox" id="withLid" name="withLid"> -->
+
+        <button type="submit">Generar Caja</button>
+        <button type="button" id="downloadSVG">Descargar Plano</button>
+    </form>
+
+    <!-- Lienzo para la visualización 3D -->
+    <canvas id="renderCanvas" style="width: 40%; height: 40vh; border: 1px solid #000;"></canvas>
+
+    <!-- Contenedor para la vista en 2D (plano) cambiado a canvas -->
+    <canvas id="designCanvas" width="800" height="600" style="border: 1px solid #000; margin-top: 20px;"></canvas>
+
+    <script src="./src/cajaCuadradaViste3d.js"></script> <!-- Código para la visualización 3D en Babylon.js -->
+    <script src="./src/cajaCuadradaPlanos.js"></script> <!-- Código para la generación del plano 2D en Paper.js -->
+</body>
+</html>
