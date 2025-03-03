@@ -78,7 +78,8 @@ const createScene = (width, height, depth, thickness, withLid) => {
 
     // Crear material de madera con ajustes para hacerlo más claro
     const material = new BABYLON.StandardMaterial("woodMaterial", scene);
-    material.diffuseTexture = new BABYLON.Texture("https://maxii1221.github.io/cajatapanormal/src/img/Wood037_2K-JPG_Color.jpg", scene);
+    material.diffuseTexture = new BABYLON.Texture("https://raw.githubusercontent.com/maxii1221/cajatapanormal/main/src/img/Wood037_2K-JPG_Color.jpg", scene);
+
     material.diffuseTexture.level = 1.5;
     material.bumpTexture = new BABYLON.Texture("https://maxii1221.github.io/cajatapanormal/src/img/Wood037_2K-JPG_NormalGL.jpg", scene);
     material.roughness = 1;
