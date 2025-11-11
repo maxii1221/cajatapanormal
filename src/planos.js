@@ -753,7 +753,7 @@ function create2DBox(width, height, depth, thickness, withLid) {
 
     // Área total de la tabla y costo por mm²
     const tableArea = 1830 * 2600; // mm²
-    const costPerSquareMm = 14347 / tableArea;
+    const costPerSquareMm = 18000 / tableArea;
 
     // Calcular el costo del material utilizado
     const materialCost = totalArea * costPerSquareMm;
