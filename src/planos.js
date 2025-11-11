@@ -758,7 +758,7 @@ function create2DBox(width, height, depth, thickness, withLid) {
     // Calcular el costo del material utilizado
     const materialCost = totalArea * costPerSquareMm;
 
-    const porcentajeDeAumento = 0.80;
+    const porcentajeDeAumento = 0.65;
 
     let costoFinalMaterial = materialCost + (materialCost * porcentajeDeAumento)
 
